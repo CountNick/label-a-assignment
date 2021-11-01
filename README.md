@@ -6,7 +6,19 @@ A create-react app with data from the last fm api. The project renders a overvie
 
 ## getting the project running
 
-first clone the repo, once the repo is cloned cd into the repo's folder where you can run:
+first clone the repo:
+
+### `git clone git@github.com:CountNick/label-a-assignment.git`
+
+cd into folder:
+
+### `cd label-a-assignment`
+
+install the needed dependencies to get project running:
+
+### `npm install`
+
+start the dev server:
 
 ### `yarn start`
 
