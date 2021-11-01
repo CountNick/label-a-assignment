@@ -2,7 +2,7 @@
 
 A create-react app with data from the last fm api. The project renders a overview of top albums by Iron Maiden, and shows detail pages for these albums with a summary and tracklist. It's also possible to sort the albums on the overview page on based on the amount of streams either from highest to lowest, or lowest to highest. Styling has been done with the styled component library, I've also done my best to make use of the BEM naming conventions for classnames. Project has been made semi responsive with the help of flexbox.
 
-## [Checkout the live demo of the project here](link)
+## [Checkout the live demo of the project here](https://trusting-hopper-fdd1a4.netlify.app/)
 
 ## getting the project running
 
@@ -20,7 +20,7 @@ install the needed dependencies to get project running:
 
 start the dev server:
 
-### `yarn start`
+### `npm run start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
