@@ -9,14 +9,14 @@ import { StyledSorter} from './components/Sorter';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
+  // init state for albumdata, metadata, and loading
   const [albums, setAlbumData] = useState([]);
   const [metaData, setMetaData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   
   
   useEffect(async() => {
-    
-    
+    // get album data
     const allAlbums = await getAllAlbums();
     // set data but only with if ID is not undefined
     setAlbumData(allAlbums.topalbums.album.filter(album => {
@@ -24,8 +24,9 @@ function App() {
         return album
       }
     }));
-
+    // set the metadata
     setMetaData(allAlbums.topalbums['@attr']);
+    // set loading to false once albumdata, and metadata has been set
     setIsLoading(false);
        
   }, []);
