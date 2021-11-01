@@ -1,10 +1,26 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+a:-webkit-any-link {
+  color: unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+@media only screen and (min-width: 750px) {
+
+  a {
+    width: 33%;
+  }
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,7 +31,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
