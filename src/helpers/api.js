@@ -14,7 +14,7 @@ export const getAlbumInfo = async (query) => {
     const encodedQuery = encodeURIComponent(query)
     // fetch the data
     const res = await fetch(
-                `http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=d732731be2f5f0ec4b10e5a3607d7090&mbid=${encodedQuery}&format=json`
+                `https://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=d732731be2f5f0ec4b10e5a3607d7090&mbid=${encodedQuery}&format=json`
               )
     // set the response to json
     const albumInfo = res.json()
